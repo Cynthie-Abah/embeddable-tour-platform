@@ -233,6 +233,7 @@ export const Tooltip = ({
               right: "10px",
               width: "28px",
               height: "28px",
+              color: 'black',
               borderRadius: "50%",
               background: "white",
               border: "1px solid rgba(0,0,0,0.1)",
@@ -252,7 +253,10 @@ export const Tooltip = ({
               (e.currentTarget.style.transform = "scale(1)")
             }
           >
-            ×
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
           </button>
           {step.title && (
             <h4 style={{ marginBottom: 8, fontWeight: 800 }}>{step.title}</h4>
